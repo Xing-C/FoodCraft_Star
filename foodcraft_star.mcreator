@@ -1,28 +1,194 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Foodcraftstar",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foodcraftstar",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/TAB"
+    },
+    {
+      "name": "OvercookedFood",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overcooked_food",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/foodcraft_star/models/item/overcooked_food.json",
+          "src/main/java/cn/mcxkly/foodcraft/item/OvercookedFoodItem.java"
+        ]
+      },
+      "path": "~/QiTa"
+    },
+    {
+      "name": "Kinkora",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kinkora",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/foodcraft_star/models/item/kinkora.json",
+          "src/main/java/cn/mcxkly/foodcraft/item/KinkoraItem.java"
+        ]
+      },
+      "path": "~/QiTa"
+    },
+    {
+      "name": "FruitLeaves",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruit_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/foodcraft_star/models/item/fruit_leaves.json",
+          "src/main/resources/assets/foodcraft_star/blockstates/fruit_leaves.json",
+          "src/main/java/cn/mcxkly/foodcraft/block/FruitLeavesBlock.java",
+          "src/main/resources/assets/foodcraft_star/models/block/fruit_leaves.json"
+        ]
+      },
+      "path": "~/FangKuai"
+    },
+    {
+      "name": "PearLeaves",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pear_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/foodcraft_star/models/item/pear_leaves.json",
+          "src/main/java/cn/mcxkly/foodcraft/block/PearLeavesBlock.java",
+          "src/main/resources/assets/foodcraft_star/models/block/pear_leaves.json",
+          "src/main/resources/assets/foodcraft_star/blockstates/pear_leaves.json"
+        ]
+      },
+      "path": "~/FangKuai"
+    },
+    {
+      "name": "LycheeLeaves",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lychee_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/cn/mcxkly/foodcraft/block/LycheeLeavesBlock.java",
+          "src/main/resources/assets/foodcraft_star/models/item/lychee_leaves.json",
+          "src/main/resources/assets/foodcraft_star/models/block/lychee_leaves.json",
+          "src/main/resources/assets/foodcraft_star/blockstates/lychee_leaves.json"
+        ]
+      },
+      "path": "~/FangKuai"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.foodcraft_star.pear_leaves": "Pear Leaves",
+      "item_group.foodcraft_star.foodcraftstar": "Foodcraftstar",
+      "item.foodcraft_star.kinkora": "Kinkora",
+      "block.foodcraft_star.fruit_leaves": "Fruit Leaves",
+      "block.foodcraft_star.lychee_leaves": "Lychee Leaves",
+      "item.foodcraft_star.overcooked_food": "Overcooked Food"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "ShiPin",
+        "children": []
+      },
+      {
+        "name": "GongJu",
+        "children": []
+      },
+      {
+        "name": "JiQi",
+        "children": []
+      },
+      {
+        "name": "YinPin",
+        "children": []
+      },
+      {
+        "name": "TianPin",
+        "children": []
+      },
+      {
+        "name": "ShuCai",
+        "children": []
+      },
+      {
+        "name": "GuaGuo",
+        "children": []
+      },
+      {
+        "name": "CaiLiao",
+        "children": []
+      },
+      {
+        "name": "ShiCai",
+        "children": []
+      },
+      {
+        "name": "ShouCe",
+        "children": []
+      },
+      {
+        "name": "FangKuai",
+        "children": []
+      },
+      {
+        "name": "QiTa",
+        "children": []
+      },
+      {
+        "name": "TAB",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "foodcraft_star",
     "modName": "食物工艺之星",
     "version": "1.0.0",
     "author": "xingchen, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "websiteURL": "https://mcxkly.cn",
+    "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "attributefix",
+      "caelus",
+      "mcreator_link",
+      "curios",
+      "patchouli",
+      "jade",
+      "geckolib",
+      "architectury",
+      "jei",
+      "cloth-config"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Resource material usage: https://github.com/InfinityStudio/FoodCraft/, Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "cn.mcxkly.foodcraft",
     "lockBaseModFiles": false
   },

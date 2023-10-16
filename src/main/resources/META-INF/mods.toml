@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Academic Free License v3.0"
+license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="foodcraft_star"
 version="1.0.0"
 displayName="食物工艺之星"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+credits="Resource material usage: https://github.com/InfinityStudio/FoodCraft/, Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcxkly.cn"
 authors="xingchen, MCreator"
 
 [[dependencies.foodcraft_star]]
@@ -18,5 +18,65 @@ authors="xingchen, MCreator"
     side="BOTH"
 
 
+[[dependencies.foodcraft_star]]
+    modId="mcreator_link"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
+[[dependencies.foodcraft_star]]
+    modId="attributefix"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="caelus"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="curios"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="jade"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="architectury"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.foodcraft_star]]
+    modId="cloth-config"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

@@ -1,0 +1,155 @@
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+  dependencies {
+    implementation fg.deobf("curse.maven:attributefix-280510:4714729")
+  }
+
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+    }
+}
+repositories { 
+    maven { 
+        url = "https://maven.theillusivec4.top/" 
+    } 
+}
+dependencies { 
+    compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:3.1.0+1.20:api") 
+    runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:3.1.0+1.20")
+}
+
+task mcreatorLink(type: DefaultTask) {
+  ant.mkdir(dir: 'lib/');
+  ant.get(src: 'https://mcreator.net/link/download/dev_1.20.1', dest: 'lib/mcreator_link.jar', skipexisting: 'true');
+}
+
+compileJava.dependsOn mcreatorLink
+
+dependencies { implementation files("lib/mcreator_link.jar") }
+
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies { 
+    implementation fg.deobf("curse.maven:curios-309927:4738776")
+}
+
+minecraft {
+  runs {
+      client {
+          property 'mixin.env.remapRefMap', 'true'
+          property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+      }
+  }
+}
+repositories {
+  maven {
+    url = "https://maven.blamejared.com"
+  }
+}
+
+dependencies {
+  compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE-SNAPSHOT:api")
+  runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-81-FORGE-SNAPSHOT")
+}
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+  implementation fg.deobf("curse.maven:jade-324717:4711195")
+}
+
+repositories {
+  maven {
+      url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+  }
+}
+
+dependencies {
+  implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.2.2')
+}
+
+minecraft {
+  runs {
+     client {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+
+      server {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+      data {
+        property 'mixin.env.remapRefMap', 'true'
+        property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    }
+  }
+}
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+  implementation fg.deobf("curse.maven:architectury-api-419699:4663010")
+}
+
+repositories {
+    maven {
+    url "https://cursemaven.com"
+    content {
+    includeGroup "curse.maven"
+    }
+}
+}
+
+dependencies {
+    implementation fg.deobf("curse.maven:jei-238222:4712868")
+}
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+  implementation fg.deobf("curse.maven:cloth-config-348521:4633444")
+}
+

@@ -25,6 +25,10 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import cn.mcxkly.foodcraft.init.FoodcraftStarModTabs;
+import cn.mcxkly.foodcraft.init.FoodcraftStarModItems;
+import cn.mcxkly.foodcraft.init.FoodcraftStarModBlocks;
+
 @Mod("foodcraft_star")
 public class FoodcraftStarMod {
 	public static final Logger LOGGER = LogManager.getLogger(FoodcraftStarMod.class);
@@ -33,6 +37,12 @@ public class FoodcraftStarMod {
 	public FoodcraftStarMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		FoodcraftStarModBlocks.REGISTRY.register(bus);
+
+		FoodcraftStarModItems.REGISTRY.register(bus);
+
+		FoodcraftStarModTabs.REGISTRY.register(bus);
 
 	}
 

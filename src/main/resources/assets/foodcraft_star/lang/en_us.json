@@ -1,1 +1,8 @@
-{}
+{
+  "block.foodcraft_star.pear_leaves": "Pear Leaves",
+  "item_group.foodcraft_star.foodcraftstar": "Foodcraftstar",
+  "item.foodcraft_star.kinkora": "Kinkora",
+  "block.foodcraft_star.fruit_leaves": "Fruit Leaves",
+  "block.foodcraft_star.lychee_leaves": "Lychee Leaves",
+  "item.foodcraft_star.overcooked_food": "Overcooked Food"
+}

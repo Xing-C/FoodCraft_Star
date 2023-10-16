@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "foodcraft_star:block/blocklizhi",
+    "particle": "foodcraft_star:block/blocklizhi"
+  }
+}

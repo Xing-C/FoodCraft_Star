@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "foodcraft_star:block/fcleaves",
+    "particle": "foodcraft_star:block/fcleaves"
+  }
+}
